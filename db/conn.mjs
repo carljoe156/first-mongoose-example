@@ -6,7 +6,7 @@ dotenv.config();
 const mongoURI = process.env.ATLAS_URI;
 const db = mongoose.connection;
 
-// connect to mongoose
+// connect to mongo
 mongoose.connect(mongoURI);
 mongoose.connection.once("open", () => {
   console.log("connected to mongo");
